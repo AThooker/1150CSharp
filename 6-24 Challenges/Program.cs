@@ -8,6 +8,11 @@ namespace _6_24_Challenges
 {
     class Program
     {
+        public static void Main()
+        {
+
+        }
+        /*
         enum FastFoodRestaurant { TacoBell, Mcdonalds, BurgerKing, Wendys, DairyQueen };
         static void Main(string[] args)
         {
@@ -114,5 +119,34 @@ namespace _6_24_Challenges
 
             Console.ReadKey();
         }
+        
+        public static void Main()
+        {
+            string mpoppins = "supercalifragilisticexpialidocious";
+            char final = ()
+            foreach (char letter in mpoppins)
+            {
+                if (letter != 'i')
+                {
+                    Console.WriteLine("Not an i");
+
+                }
+                else
+                {
+                    Console.WriteLine(letter);
+                }
+
+                int count = mpoppins.Length;
+                Console.WriteLine(count);
+                Console.ReadLine();
+            }
+        }
     }
+        */
+
+    }
+     
+    
+
 }
+

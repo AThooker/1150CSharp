@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E3F2843-0F48-4AB7-BDFB-821A1E8C0130}</ProjectGuid>
+    <ProjectGuid>{DC877CFD-1605-43EA-B2EC-A74FF8A9DE48}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_6_24_Challenges</RootNamespace>
-    <AssemblyName>6-24 Challenges</AssemblyName>
+    <RootNamespace>RobTheBank_Console</RootNamespace>
+    <AssemblyName>RobTheBank_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassChallenges.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobTheBank_Classes\RobTheBank_Classes.csproj">
+      <Project>{9D68C9ED-B5D6-48A6-ABD3-E095A8056A71}</Project>
+      <Name>RobTheBank_Classes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

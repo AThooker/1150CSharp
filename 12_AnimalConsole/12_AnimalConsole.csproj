@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E3F2843-0F48-4AB7-BDFB-821A1E8C0130}</ProjectGuid>
+    <ProjectGuid>{88617227-8797-465C-8E7A-E8E244B06F78}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_6_24_Challenges</RootNamespace>
-    <AssemblyName>6-24 Challenges</AssemblyName>
+    <RootNamespace>_12_AnimalConsole</RootNamespace>
+    <AssemblyName>12_AnimalConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassChallenges.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\12_AnimalClassLibrary\12_AnimalClassLibrary.csproj">
+      <Project>{BF06BEC7-3D70-4BDE-A314-D83CAB314BF2}</Project>
+      <Name>12_AnimalClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
